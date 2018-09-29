@@ -1,0 +1,3 @@
+rootProject.name = 'foodbible'
+
+include ':app'
