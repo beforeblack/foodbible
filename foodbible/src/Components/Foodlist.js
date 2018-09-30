@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import { Text, View } from "react-native";
 
+import { FoodCard } from './FoodCard';
 import styles from "../Styles/styles";
 
-class Foodlist extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.containerText}>This is the food component</Text>
-      </View>
-    );
-  }
-}
+const Foodlist = (props) => {
+  return (
+    <View style={styles.foodlistCont}>
+      <FoodCard />
+    </View>
+  );
+};
 
 export { Foodlist };
